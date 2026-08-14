@@ -4,19 +4,24 @@
 class InMemoryStorage:
     """
     A simple in-memory implementation of the storage interface.
-    Stores orders in a Python dictionary.
+    Stores orders in a Python dictionary keyed by order_id.
     """
     def __init__(self):
         self._orders = {}
 
-    def save_order(self, order_id: str, order_data: dict):
-        self._orders[order_id] = order_data.copy()
+    def save_order(self, order: dict):
+        """Insert or overwrite an order, keyed by its order_id."""
+        self._orders[order["order_id"]] = order.copy()
 
     def get_order(self, order_id: str):
-        return self._orders.get(order_id, {}).copy() if self._orders.get(order_id) else None
+        """Return a copy of the order dict, or None if not found."""
+        order = self._orders.get(order_id)
+        return order.copy() if order else None
 
     def get_all_orders(self):
-        return {k: v.copy() for k, v in self._orders.items()}
+        """Return all orders as a list of dicts."""
+        return [v.copy() for v in self._orders.values()]
 
     def clear(self):
+        """Reset storage — used between tests."""
         self._orders = {}
