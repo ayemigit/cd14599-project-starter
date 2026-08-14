@@ -1,6 +1,8 @@
 # This module contains the OrderTracker class, which encapsulates the core
 # business logic for managing orders.
 
+VALID_STATUSES = {"pending", "processing", "shipped", "delivered", "cancelled"}
+
 class OrderTracker:
     """
     Manages customer orders, providing functionalities to add, update,
