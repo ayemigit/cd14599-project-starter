@@ -1,0 +1,29 @@
+{
+  "cards": [
+    {
+      "question": "What does HTTP stand for?",
+      "answer": "HyperText Transfer Protocol",
+      "category": "networking"
+    },
+    {
+      "question": "What does DNS stand for?",
+      "answer": "Domain Name System",
+      "category": "networking"
+    },
+    {
+      "question": "What does SSH stand for?",
+      "answer": "Secure Shell",
+      "category": "security"
+    },
+    {
+      "question": "What does SSL stand for?",
+      "answer": "Secure Sockets Layer",
+      "category": "security"
+    },
+    {
+      "question": "What does API stand for?",
+      "answer": "Application Programming Interface",
+      "category": "software"
+    }
+  ]
+}

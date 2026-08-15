@@ -1,0 +1,42 @@
+[
+  {
+    "question": "What is a Python list?",
+    "answer": "An ordered, mutable collection of items",
+    "category": "data-structures"
+  },
+  {
+    "question": "What does the 'len()' function do?",
+    "answer": "Returns the number of items in an object",
+    "category": "built-ins"
+  },
+  {
+    "question": "What is a Python dictionary?",
+    "answer": "An unordered collection of key-value pairs",
+    "category": "data-structures"
+  },
+  {
+    "question": "What keyword is used to define a function in Python?",
+    "answer": "def",
+    "category": "syntax"
+  },
+  {
+    "question": "What is a list comprehension?",
+    "answer": "A concise way to create lists using a single line expression",
+    "category": "syntax"
+  },
+  {
+    "question": "What does 'PEP 8' refer to?",
+    "answer": "Python's style guide for writing readable code",
+    "category": "conventions"
+  },
+  {
+    "question": "What is the difference between '==' and 'is' in Python?",
+    "answer": "'==' checks value equality; 'is' checks object identity",
+    "category": "operators"
+  },
+  {
+    "question": "What is a Python decorator?",
+    "answer": "A function that wraps another function to modify its behavior",
+    "category": "advanced"
+  }
+]
